@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- =====Css file link===== -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="calculator-container">
+        <table>
+            <tr>
+                <td colspan="10"><input type="text" disabled class="result-display"></td>
+            </tr>
+
+            <tr>
+                <td><input class="enter red" type="button" value="C" onclick="allDelete()"></td>
+                <td><input class="enter" type="button" value="" onclick="calculation()"></td>
+                <td><input class="enter" type="button" value="%" onclick="calculation('%')"></td>
+                <td><input class="enter" type="button" value="/" onclick="calculation('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="enter" type="button" value="7" onclick="calculation('7')"></td>
+                <td><input class="enter" type="button" value="8" onclick="calculation('8')"></td>
+                <td><input class="enter" type="button" value="9" onclick="calculation('9')"></td>
+                <td><input class="enter" type="button" value="*" onclick="calculation('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="enter" type="button" value="4" onclick="calculation('5')"></td>
+                <td><input class="enter" type="button" value="5" onclick="calculation('5')"></td>
+                <td><input class="enter" type="button" value="6" onclick="calculation('6')"></td>
+                <td><input class="enter" type="button" value="-" onclick="calculation('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="enter" type="button" value="1" onclick="calculation('1')"></td>
+                <td><input class="enter" type="button" value="2" onclick="calculation('2')"></td>
+                <td><input class="enter" type="button" value="3" onclick="calculation('3')"></td>
+                <td><input class="enter" type="button" value="+" onclick="calculation('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="enter" type="button" value="00" onclick="calculation('00')"></td>
+                <td><input class="enter" type="button" value="0" onclick="calculation('0')"></td>
+                <td><input class="enter" type="button" value="." onclick="calculation('.')"></td>
+                <td><input class="enter" type="button" value="=" onclick="result()('=')"></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+    <!-- ======JavaScript file link==== -->
+    <script src="script.js"></script>
+</body>
+</html>
